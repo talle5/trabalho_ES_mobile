@@ -21,11 +21,10 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import com.vezcerta.saudedigital.components.BottomNavigationBar
 import com.vezcerta.saudedigital.components.MainTopAppBar
 import com.vezcerta.saudedigital.screens.fila.FilaScreen
-import com.example.vezcerta.screens.login.LoginScreen
+import com.vezcerta.saudedigital.screens.login.LoginScreen
 import com.vezcerta.saudedigital.screens.perfil.PerfilScreen
 import com.vezcerta.saudedigital.screens.unidades.UnidadesScreen
 import com.vezcerta.saudedigital.ui.theme.VezCertaTheme
-import org.osmdroid.config.Configuration
 
 val ThemeBlue = Color(0xFF0052A5)
 

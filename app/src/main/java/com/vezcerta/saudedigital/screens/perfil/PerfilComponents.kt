@@ -1,4 +1,4 @@
-package com.example.vezcerta.screens.perfil
+package com.vezcerta.saudedigital.screens.perfil
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -29,7 +29,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.vezcerta.ThemeBlue
+import com.vezcerta.saudedigital.ThemeBlue
 
 /**
  * Cores usadas só na tela de perfil (tiradas do protótipo).

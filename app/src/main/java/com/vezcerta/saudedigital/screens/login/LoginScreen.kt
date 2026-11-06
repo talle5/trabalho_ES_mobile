@@ -1,4 +1,4 @@
-package com.example.vezcerta.screens.login
+package com.vezcerta.saudedigital.screens.login
 
 import android.util.Patterns
 import androidx.compose.foundation.BorderStroke
@@ -51,9 +51,9 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.vezcerta.R
-import com.example.vezcerta.ThemeBlue
-import com.example.vezcerta.ui.theme.VezCertaTheme
+import com.vezcerta.saudedigital.R
+import com.vezcerta.saudedigital.ThemeBlue
+import com.vezcerta.saudedigital.ui.theme.VezCertaTheme
 
 @Composable
 fun LoginScreen(

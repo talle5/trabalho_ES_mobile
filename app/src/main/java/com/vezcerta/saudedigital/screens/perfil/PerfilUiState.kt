@@ -1,4 +1,4 @@
-package com.example.vezcerta.screens.perfil
+package com.vezcerta.saudedigital.screens.perfil
 
 /** Dados do paciente exibidos na tela de perfil. */
 data class Paciente(
