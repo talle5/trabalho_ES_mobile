@@ -1,4 +1,4 @@
-package com.example.vezcerta
+package com.vezcerta.saudedigital
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -18,12 +18,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.example.vezcerta.components.BottomNavigationBar
-import com.example.vezcerta.components.MainTopAppBar
-import com.example.vezcerta.screens.fila.FilaScreen
-import com.example.vezcerta.screens.perfil.PerfilScreen
-import com.example.vezcerta.screens.unidades.UnidadesScreen
-import com.example.vezcerta.ui.theme.VezCertaTheme
+import com.vezcerta.saudedigital.components.BottomNavigationBar
+import com.vezcerta.saudedigital.components.MainTopAppBar
+import com.vezcerta.saudedigital.screens.fila.FilaScreen
+import com.vezcerta.saudedigital.screens.perfil.PerfilScreen
+import com.vezcerta.saudedigital.screens.unidades.UnidadesScreen
+import com.vezcerta.saudedigital.ui.theme.VezCertaTheme
+import org.osmdroid.config.Configuration
 
 val ThemeBlue = Color(0xFF0052A5)
 
@@ -38,10 +39,11 @@ enum class NavigationTab(
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         enableEdgeToEdge()
         setContent {
             VezCertaTheme {
-                var selectedTab by rememberSaveable { mutableStateOf(NavigationTab.FILA) }
+                var selectedTab by rememberSaveable { mutableStateOf(NavigationTab.UNIDADES) }
                 Scaffold(modifier = Modifier.fillMaxSize(), topBar = {
                     MainTopAppBar()
                 }, bottomBar = {

@@ -1,4 +1,4 @@
-package com.example.vezcerta.ui.theme
+package com.vezcerta.saudedigital.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

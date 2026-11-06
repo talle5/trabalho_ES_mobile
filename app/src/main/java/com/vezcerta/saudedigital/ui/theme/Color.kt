@@ -1,4 +1,4 @@
-package com.example.vezcerta.ui.theme
+package com.vezcerta.saudedigital.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

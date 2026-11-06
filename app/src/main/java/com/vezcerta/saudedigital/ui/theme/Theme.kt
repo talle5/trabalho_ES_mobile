@@ -1,4 +1,4 @@
-package com.example.vezcerta.ui.theme
+package com.vezcerta.saudedigital.ui.theme
 
 import android.app.Activity
 import android.os.Build

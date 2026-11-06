@@ -45,7 +45,7 @@ O **VezCerta** é uma solução mobile desenvolvida em **Android nativo com Jetp
 ## 📂 Estrutura do Projeto
 
 ```
-com.example.vezcerta/
+com.vezcerta.saudedigital/
 ├── components/          # Componentes de UI reutilizáveis (TopAppBar, BottomNavigationBar)
 │   ├── NavigationBar.kt # Barra de navegação inferior com suporte a callbacks de estado
 │   └── TopBar.kt        # Barra superior customizada (Saúde Digital)

@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.vezcerta"
+    namespace = "com.vezcerta.saudedigital"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.vezcerta"
+        applicationId = "com.vezcerta.saudedigital"
         minSdk = 30
         targetSdk = 37
         versionCode = 1

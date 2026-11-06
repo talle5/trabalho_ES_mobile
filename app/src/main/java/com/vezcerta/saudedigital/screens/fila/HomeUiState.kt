@@ -1,4 +1,4 @@
-package com.example.vezcerta.screens.fila
+package com.vezcerta.saudedigital.screens.fila
 
 sealed interface HomeUiState {
     object Loading : HomeUiState

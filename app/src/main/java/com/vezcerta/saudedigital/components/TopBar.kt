@@ -1,4 +1,4 @@
-package com.example.vezcerta.components
+package com.vezcerta.saudedigital.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -24,8 +24,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.vezcerta.R
-import com.example.vezcerta.ThemeBlue
+import com.vezcerta.saudedigital.R
+import com.vezcerta.saudedigital.ThemeBlue
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
