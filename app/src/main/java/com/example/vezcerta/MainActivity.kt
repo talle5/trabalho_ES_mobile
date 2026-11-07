@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import com.example.vezcerta.components.BottomNavigationBar
 import com.example.vezcerta.components.MainTopAppBar
 import com.example.vezcerta.screens.fila.FilaScreen
+import com.example.vezcerta.screens.login.LoginScreen
 import com.example.vezcerta.screens.perfil.PerfilScreen
 import com.example.vezcerta.screens.unidades.UnidadesScreen
 import com.example.vezcerta.ui.theme.VezCertaTheme
@@ -41,28 +42,40 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             VezCertaTheme {
-                var selectedTab by rememberSaveable { mutableStateOf(NavigationTab.FILA) }
-                Scaffold(modifier = Modifier.fillMaxSize(), topBar = {
-                    MainTopAppBar()
-                }, bottomBar = {
-                    BottomNavigationBar(
-                        selectedTab = selectedTab,
-                        onTabSelected = { newTab -> selectedTab = newTab },
+                var logado by rememberSaveable { mutableStateOf(false) }
+
+                if (!logado) {
+                    LoginScreen(
+                        onEntrar = { email, senha ->
+                            // TODO: validar com backend
+                            logado = true
+                        },
+                        onCadastrar = {
+                            // TODO: tela de cadastro
+                        },
+                        onEsqueceuSenha = {
+                            // TODO: recuperação de senha
+                        }
                     )
-                }) { innerPadding ->
-                    val contentModifier = Modifier.padding(innerPadding)
-                    when (selectedTab) {
-                        NavigationTab.FILA -> FilaScreen(
-                            modifier = contentModifier
-                        )
+                } else {
+                    var selectedTab by rememberSaveable { mutableStateOf(NavigationTab.FILA) }
 
-                        NavigationTab.UNIDADES -> UnidadesScreen(
-                            modifier = contentModifier
-                        )
-
-                        NavigationTab.PERFIL -> PerfilScreen(
-                            modifier = contentModifier
-                        )
+                    Scaffold(
+                        modifier = Modifier.fillMaxSize(),
+                        topBar = { MainTopAppBar() },
+                        bottomBar = {
+                            BottomNavigationBar(
+                                selectedTab = selectedTab,
+                                onTabSelected = { newTab -> selectedTab = newTab },
+                            )
+                        }
+                    ) { innerPadding ->
+                        val contentModifier = Modifier.padding(innerPadding)
+                        when (selectedTab) {
+                            NavigationTab.FILA -> FilaScreen(modifier = contentModifier)
+                            NavigationTab.UNIDADES -> UnidadesScreen(modifier = contentModifier)
+                            NavigationTab.PERFIL -> PerfilScreen(modifier = contentModifier)
+                        }
                     }
                 }
             }
