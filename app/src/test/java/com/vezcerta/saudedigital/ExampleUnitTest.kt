@@ -1,4 +1,4 @@
-package com.example.vezcerta
+package com.vezcerta.saudedigital
 
 import org.junit.Test
 

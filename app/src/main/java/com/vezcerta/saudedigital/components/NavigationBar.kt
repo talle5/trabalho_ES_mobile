@@ -1,4 +1,4 @@
-package com.example.vezcerta.components
+package com.vezcerta.saudedigital.components
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -9,8 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import com.example.vezcerta.NavigationTab
-import com.example.vezcerta.ThemeBlue
+import com.vezcerta.saudedigital.NavigationTab
+import com.vezcerta.saudedigital.ThemeBlue
 
 @Composable
 fun BottomNavigationBar(
