@@ -165,7 +165,7 @@ fun LoginScreen(
 }
 
 @Composable
-private fun BannerLogo() {
+fun BannerLogo() {
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -195,7 +195,7 @@ private fun BannerLogo() {
 }
 
 @Composable
-private fun CampoComRotulo(
+fun CampoComRotulo(
     rotulo: String,
     valor: String,
     onValorChange: (String) -> Unit,
@@ -232,7 +232,7 @@ private fun CampoComRotulo(
 }
 
 @Composable
-private fun BotaoAzul(texto: String, onClick: () -> Unit) {
+fun BotaoAzul(texto: String, onClick: () -> Unit) {
     Button(
         onClick = onClick,
         modifier = Modifier
