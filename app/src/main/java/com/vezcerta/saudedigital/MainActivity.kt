@@ -21,6 +21,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.vezcerta.saudedigital.components.BottomNavigationBar
 import com.vezcerta.saudedigital.components.MainTopAppBar
+import com.vezcerta.saudedigital.screens.cadastro.CadastroConcluidoScreen
+import com.vezcerta.saudedigital.screens.cadastro.CadastroScreen
 import com.vezcerta.saudedigital.screens.fila.FilaScreen
 import com.vezcerta.saudedigital.screens.login.LoginScreen
 import com.vezcerta.saudedigital.screens.perfil.PerfilScreen

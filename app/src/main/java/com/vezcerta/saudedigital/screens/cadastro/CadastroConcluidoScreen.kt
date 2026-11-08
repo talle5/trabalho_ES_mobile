@@ -1,4 +1,4 @@
-package com.example.vezcerta.screens.cadastro
+package com.vezcerta.saudedigital.screens.cadastro
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -23,10 +23,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.vezcerta.ThemeBlue
-import com.example.vezcerta.screens.login.BannerLogo
-import com.example.vezcerta.screens.login.BotaoAzul
-import com.example.vezcerta.ui.theme.VezCertaTheme
+import com.vezcerta.saudedigital.ThemeBlue
+import com.vezcerta.saudedigital.screens.login.BannerLogo
+import com.vezcerta.saudedigital.screens.login.BotaoAzul
+import com.vezcerta.saudedigital.ui.theme.VezCertaTheme
 
 @Composable
 fun CadastroConcluidoScreen(

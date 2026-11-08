@@ -49,7 +49,7 @@ fun UnidadesScreen(
         "Bairro" to "Centro",
     )
 
-    val ubsLocation = LatLng(-4.9686, -39.0161)
+    val ubsLocation = LatLng(-4.968644558143433, -39.01317093062767)
     val cameraPositionState = rememberCameraPositionState {
         position = CameraPosition.fromLatLngZoom(ubsLocation, 17f)
     }

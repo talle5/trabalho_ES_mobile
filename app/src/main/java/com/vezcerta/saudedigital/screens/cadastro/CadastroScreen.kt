@@ -1,4 +1,4 @@
-package com.example.vezcerta.screens.cadastro
+package com.vezcerta.saudedigital.screens.cadastro
 
 import android.util.Patterns
 import androidx.compose.foundation.BorderStroke
@@ -28,10 +28,10 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.vezcerta.screens.login.BannerLogo
-import com.example.vezcerta.screens.login.BotaoAzul
-import com.example.vezcerta.screens.login.CampoComRotulo
-import com.example.vezcerta.ui.theme.VezCertaTheme
+import com.vezcerta.saudedigital.screens.login.BannerLogo
+import com.vezcerta.saudedigital.screens.login.BotaoAzul
+import com.vezcerta.saudedigital.screens.login.CampoComRotulo
+import com.vezcerta.saudedigital.ui.theme.VezCertaTheme
 
 @Composable
 fun CadastroScreen(
