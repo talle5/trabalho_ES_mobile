@@ -2,6 +2,10 @@ package com.example.vezcerta.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+val ThemeBlue = Color(0xFF0052A5)
+val ThemeLightBlue = Color(0xFFEAF2FF)
+val ThemeBackground = Color(0xFFF7F8FF)
+
 val Purple80 = Color(0xFFD0BCFF)
 val PurpleGrey80 = Color(0xFFCCC2DC)
 val Pink80 = Color(0xFFEFB8C8)

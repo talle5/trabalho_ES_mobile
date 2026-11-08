@@ -9,35 +9,33 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
+    primary = ThemeBlue,
     secondary = PurpleGrey80,
     tertiary = Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
+    primary = ThemeBlue,
     secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
+    tertiary = Pink40,
+    background = ThemeBackground,
+    surface = Color.White,
     onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primaryContainer = ThemeLightBlue,
+    onPrimaryContainer = ThemeBlue,
+    outlineVariant = Color(0xFFE6EAF0),
+    onSurfaceVariant = Color(0xFF6B7280)
 )
 
 @Composable
 fun VezCertaTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false, // Mudado para false para garantir que a cor primária (Azul) prevaleça sobre a cor do sistema
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
