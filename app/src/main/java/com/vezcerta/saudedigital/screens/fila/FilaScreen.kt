@@ -38,7 +38,9 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.vezcerta.saudedigital.ui.theme.VezCertaTheme
 
 @Composable
 fun getDoctorIcon(silhouetteColor: Color, stethoscopeColor: Color): ImageVector {
@@ -273,3 +275,11 @@ fun FilaScreen(
 }
 
 data class PacienteFila(val nome: String, val isUsuario: Boolean)
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+private fun FilaScreenPreview() {
+    VezCertaTheme {
+        FilaScreen()
+    }
+}
